@@ -1,0 +1,115 @@
+body {
+background: rgb(234, 169, 234);
+height: 100%;
+margin: 0;
+}
+
+.birthday-card {
+position: relative;
+width: 300px;
+height: 395px;
+border: 10px solid tomato;
+border-bottom-right-radius: 25px;
+margin: 60px auto 0 auto;
+box-shadow: inset 10px 0px 15px 0px rgba(0, 0, 0, 0.1);
+background-image: linear-gradient(to bottom, white, rgba(255, 255, 255,0.1)), url("Screenshot.png");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.birthday-card .text {
+width: 80%;
+height: 80%;
+margin: auto;
+}
+
+.birthday-card .text > p {
+font-size: 1.2em;
+font-family: Cursive;
+font-style: justify;
+font-weight: lighter;
+color: #331717;
+list-style: 1.4;
+text-align: center;
+line-height: 23px;
+margin: 30px auto 0 auto;
+}
+
+.birthday-card .text .title {
+font-family: 'Poppins' , sans-serif;
+font-weight: bold;
+font-size: 1.5em;
+margin: 60px auto 60px auto;
+}
+
+.title a{
+text-decoration: none;
+color:purple;
+}
+
+.title a:hover{
+color:darkcyan;
+}
+
+.title a:active{
+color:hotpink;
+}
+
+.birthday-card .cover-outer {
+position: absolute;
+width: 100%;
+height: 100%;
+margin: -10px 0 0 -10px;
+border: 10px solid  orange;
+outline: 1px solid black;
+backface-visibility: hidden;
+transform-style: preserve-3d;
+transform-origin: 0% 50%;
+transform: perspective(800px) rotateY(0deg);
+transition: all 0.8s ease-in-out;
+}
+
+.birthday-card .cover-outer img {
+    box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.22);
+    border-radius: 5px;
+}
+
+.birthday-card .cover-inner {
+position: absolute;
+width: 100%;
+height: 100%;
+border: 10px solid tomato;
+background-color: tomato;
+margin: -10px 0px 0 -10px;
+border-top-right-radius: 25px;
+backface-visibility: visible;
+filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+transform-style: preserve-3d;
+transform-origin: 0% 50%;
+transform: perspective(800px) rotateY(0deg);
+transition: all 0.8s ease-in-out;
+overflow: hidden;
+}
+
+
+.By{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-style: italic;
+font-size: 18px;
+padding-left:197px;
+line-height: 62px;
+text-decoration-line: underline;
+}
+
+.birthday-card .cover-inner img {
+    transform: rotateY(170deg);
+}
+
+.birthday-card:hover .cover-outer {
+    transform: perspective(800px) rotateY(-170deg);
+}
+
+.birthday-card:hover .cover-inner {
+    transform: perspective(800px) rotateY(-170deg);
+    box-shadow: 7px 0 5px 0 rgba(0, 0, 0, 0.3), inset 2px 0px 15px 0px rgba(0, 0, 0, 0.1);
+}       

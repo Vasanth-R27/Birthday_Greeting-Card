@@ -12,7 +12,7 @@ border: 10px solid tomato;
 border-bottom-right-radius: 25px;
 margin: 60px auto 0 auto;
 box-shadow: inset 10px 0px 15px 0px rgba(0, 0, 0, 0.1);
-background-image: linear-gradient(to bottom, white, rgba(255, 255, 255,0.1)), url("Screenshot.png");
+background-image: linear-gradient(to bottom, white, rgba(255, 255, 255,0.1)), url("Cat-image.png");
 background-repeat: no-repeat;
 background-size: cover;
 }
